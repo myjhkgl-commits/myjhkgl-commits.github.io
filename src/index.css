@@ -1540,3 +1540,220 @@ body::after {
   .contact__meta { justify-content: flex-start; width: 100%; }
   .contact__row { min-width: calc(50% - 28px); }
 }
+
+
+/* ============================================================
+   Content planning update · about cards + career direction
+   ============================================================ */
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 38px 0 0;
+}
+
+.about__card {
+  min-height: 168px;
+  padding: 22px 20px;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.018));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__card span {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: .22em;
+  color: var(--accent);
+}
+
+.about__card strong {
+  display: block;
+  margin: 18px 0 12px;
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.about__card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.direction {
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(720px 420px at 82% 20%, rgba(138, 164, 255, .11), transparent 66%),
+    linear-gradient(180deg, #070a12 0%, var(--bg) 100%);
+}
+
+.direction__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.direction__item {
+  min-height: 360px;
+  padding: 34px 30px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,.018);
+  transition: transform .5s var(--ease), background .5s var(--ease), border-color .5s var(--ease);
+}
+
+.direction__item:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,.045);
+  border-color: rgba(138,164,255,.36);
+}
+
+.direction__no {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--accent-bright);
+  margin-bottom: 82px;
+}
+
+.direction__item h3 {
+  font-size: clamp(22px, 1.7vw, 30px);
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.direction__item p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.85;
+}
+
+@media (max-width: 1100px) {
+  .about__cards,
+  .direction__grid { grid-template-columns: repeat(2, 1fr); }
+  .direction__item { min-height: 280px; }
+  .direction__no { margin-bottom: 54px; }
+}
+
+@media (max-width: 640px) {
+  .about__cards,
+  .direction__grid { grid-template-columns: 1fr; }
+  .about__card { min-height: auto; }
+  .direction__item { min-height: auto; padding: 28px 24px; }
+  .direction__no { margin-bottom: 38px; }
+}
+
+/* ============================================================
+   Work section tidy grid · cleaner portfolio layout
+   ============================================================ */
+.work__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px;
+  align-items: stretch;
+}
+
+.work__card,
+.work__card--1,
+.work__card--2,
+.work__card--3,
+.work__card--4,
+.work__card--5,
+.work__card--6 {
+  grid-column: auto;
+  padding-top: 0;
+}
+
+.work__card-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .018);
+  transition: border-color .45s var(--ease), background .45s var(--ease), transform .45s var(--ease);
+}
+
+.work__card-inner:hover {
+  transform: translateY(-6px);
+  border-color: rgba(138, 164, 255, .34);
+  background: rgba(255, 255, 255, .034);
+}
+
+.work__media {
+  margin-bottom: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.work__media img,
+.work__card--1 .work__media img,
+.work__card--2 .work__media img,
+.work__card--3 .work__media img,
+.work__card--4 .work__media img,
+.work__card--5 .work__media img,
+.work__card--6 .work__media img {
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+}
+
+.work__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 26px;
+}
+
+.work__title {
+  align-items: flex-start;
+  min-height: 2.5em;
+  font-size: clamp(20px, 1.45vw, 26px);
+}
+
+.work__desc {
+  max-width: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.work__tags {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+@media (max-width: 1100px) {
+  .work__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+  .work__card--1 { grid-column: auto; }
+}
+
+@media (max-width: 640px) {
+  .work__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .work__media img,
+  .work__card--1 .work__media img,
+  .work__card--2 .work__media img,
+  .work__card--3 .work__media img,
+  .work__card--4 .work__media img,
+  .work__card--5 .work__media img,
+  .work__card--6 .work__media img {
+    aspect-ratio: 16 / 11;
+  }
+}
