@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Reveal from './Reveal.jsx'
-import { profile, stats } from '../data/content.js'
+import { aboutCards, profile, stats } from '../data/content.js'
 
 function Counter({ value, suffix }) {
   const ref = useRef(null)
@@ -79,7 +79,17 @@ export default function About() {
               {profile.intro2}
             </Reveal>
 
-            <Reveal className="about__contacts" delay={200}>
+            <Reveal className="about__cards" delay={180}>
+              {aboutCards.map((card) => (
+                <article className="about__card" key={card.title}>
+                  <span>{card.title}</span>
+                  <strong>{card.value}</strong>
+                  <p>{card.desc}</p>
+                </article>
+              ))}
+            </Reveal>
+
+            <Reveal className="about__contacts" delay={220}>
               {contacts.map((c) => (
                 <div className="about__contact" key={c.k}>
                   <span>{c.k}</span>
@@ -94,7 +104,7 @@ export default function About() {
               ))}
             </Reveal>
 
-            <Reveal className="about__stats" delay={260}>
+            <Reveal className="about__stats" delay={280}>
               {stats.map((s) => (
                 <div className="stat" key={s.label}>
                   <Counter value={s.value} suffix={s.suffix} />
@@ -108,3 +118,4 @@ export default function About() {
     </section>
   )
 }
+
