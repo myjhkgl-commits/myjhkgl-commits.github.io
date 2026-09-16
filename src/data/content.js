@@ -13,16 +13,16 @@ const img = (prompt, size = 'landscape_16_9') =>
 export const profile = {
   name: '孟玉佳',
   nameEn: 'MENG YUJIA',
-  roles: ['平面设计师', 'AIGC 创意设计', '电商视觉策划'],
+  roles: ['平面设计师', 'AIGC 创意设计', '交互设计'],
   location: '山东 · 潍坊',
   email: 'mylhgk@163.com',
-  wechat: 'wydas2311',
+  wechat: 'wydbs2311',
   phone: '15314407903',
-  intent: '电商视觉策划',
+  intent: '交互设计',
   intro:
-    '潍坊学院视觉传达设计专业本科在读，专业成绩位列前 3%。持有平面设计师资格证、日语 N2 证书与 AIGC 技能证书，擅长以 AIGC 工作流提升创意生产效率，并以设计心理学的视角理解用户与消费决策。',
+    '潍坊学院数夕媒体技术专业本科在读，竞赛经验丰富。持有日语 N2 证书、日语四级证书、日语六级证书，擅长以 AIGC 工作流提升创意生产效率，获得国奖省奖共计 19 项。',
   intro2:
-    '曾任学院心理服务中心朋辈部副部长，统筹 30 人团队、策划多场千人规模活动；暑期实习中主导「名师说」系列活动线上视觉与自媒体运营，单场活动报名突破 3000 人，海报制作效率提升 40%。求职方向：电商视觉策划。',
+    '曾任学院心理服务中心朋辈部部长，统筹 30 人团队、策划多场百人规模活动；暑期实习中主导「名师说」系列活动线上视觉与自媒体运营，单场活动报名突破 3000 人，海报制作效率提升 40%。求职方向：交互设计。',
   portrait: asset('/portrait.jpg'),
   heroPoster: img(
     'Minimal dark abstract network of thin glowing blue dots and delicate connecting lines on pure black background, plexus technology style, subtle depth of field, cinematic, restrained, high-end',
@@ -30,11 +30,46 @@ export const profile = {
   )
 }
 
+export const aboutCards = [
+  {
+    title: '教育背景',
+    value: '潍坊学院 · 数字媒体技术 · 字体设计 · 交互设计',
+    desc: '本科在读，竞赛经验丰富，具备扎实版式、图形、字体与交互设计基础。'
+  },
+  {
+    title: '证书能力',
+    value: '平面设计师 / AIGC / 日语 N2 / 日语四级 / 日语六级',
+    desc: '兼具传统平面功底、AI 创意生产效率与跨文化审美理解。'
+  },
+  {
+    title: '实践经历',
+    value: '活动视觉 / 新媒体运营 / 字体设计',
+    desc: '参与活动统筹与线上视觉运营，能把创意转化为实际传播效果；参与字体设计项目，与方正公司对接完成“明朝体”字体开发，预计 2026 年 12 月上线。'
+  }
+]
+
+export const directions = [
+  {
+    title: '电商视觉设计',
+    desc: '商品卖点提炼、首图/详情页视觉、促销专题与转化导向版式。'
+  },
+  {
+    title: 'AIGC 创意设计',
+    desc: 'AI 主视觉生成、提示词工作流、概念拓展与后期精修落地。'
+  },
+  {
+    title: '品牌视觉设计',
+    desc: '品牌基础视觉、海报、包装、字体与图形系统化表达。'
+  },
+  {
+    title: '新媒体视觉设计',
+    desc: '公众号、抖音、小红书等内容视觉统一与运营素材设计。'
+  }
+]
 export const stats = [
   { value: 3000, suffix: '+', label: '单场活动报名人次' },
   { value: 40, suffix: '%', label: '海报制作提效' },
   { value: 20, suffix: '%', label: '账号粉丝增长' },
-  { value: 30, suffix: '%', label: '课程咨询量提升' }
 ]
 
 export const projects = [
@@ -124,7 +159,7 @@ export const strengths = [
     no: '02',
     title: '平面与品牌视觉',
     en: 'GRAPHIC & BRAND',
-    desc: '持有平面设计师资格证，专业成绩位列前 3%，多项作品获国家级、省级设计奖项，版式与包装功底扎实。',
+    desc: '持有平面设计师资格证，多项作品获国家级、省级设计奖项，版式与包装功底扎实。',
     points: ['海报与版式设计', '品牌与包装设计', '字体与图形设计']
   },
   {
@@ -148,5 +183,7 @@ export const navLinks = [
   { href: '#about', label: '关于' },
   { href: '#work', label: '作品' },
   { href: '#capabilities', label: '能力' },
+  { href: '#direction', label: '方向' },
   { href: '#contact', label: '联系' }
 ]
+
