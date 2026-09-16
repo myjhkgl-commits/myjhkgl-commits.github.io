@@ -1,0 +1,5 @@
+node_modules
+dist
+qiaoyujia-portfolio/
+.DS_Store
+*.local
