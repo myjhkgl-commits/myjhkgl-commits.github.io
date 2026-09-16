@@ -38,7 +38,7 @@ export default function Hero() {
         <p className="hero__sub">
           {profile.name} — {profile.roles.join(' / ')}。
           <br />
-          视觉传达设计本科在读 · 专注 AIGC 创意与电商视觉转化。
+          数字媒体技术本科在读。
         </p>
 
         <div className="hero__actions">
