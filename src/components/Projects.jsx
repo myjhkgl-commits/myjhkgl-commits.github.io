@@ -56,7 +56,7 @@ export default function Projects() {
           <p className="section__desc">
             六个代表性作品，
             <br />
-            覆盖字体、IP、信息可视化与产品设计。
+            覆盖字体、IP、信息可视化与交互设计。
           </p>
         </Reveal>
 

@@ -41,7 +41,7 @@ const contacts = [
   { k: '邮箱', v: profile.email, href: `mailto:${profile.email}` },
   { k: '微信', v: profile.wechat },
   { k: '电话', v: profile.phone, href: `tel:${profile.phone}` },
-  { k: '所在地', v: profile.location }
+  { k: '所在地', v: `${profile.location} · ${profile.age}` }
 ]
 
 export default function About() {
@@ -60,17 +60,17 @@ export default function About() {
             <div className="about__portrait">
               <img src={profile.portrait} alt={`${profile.name} 人物肖像`} loading="lazy" />
               <div className="about__portrait-badge">
-                <strong>TOP 3%</strong>
-                <span>DESIGN RANKING</span>
+                <strong>19</strong>
+                <span>国奖 · 省奖</span>
               </div>
             </div>
           </Reveal>
 
           <div className="about__body">
             <Reveal as="h3" className="about__lead">
-              扎实的平面功底，
+              完整跑通项目的
               <br />
-              乘以 AI 时代的效率。
+              设计能力与统筹视角。
             </Reveal>
             <Reveal as="p" className="about__text" delay={80}>
               {profile.intro}

@@ -8,14 +8,14 @@ export default function Strengths() {
         <Reveal className="section__head section__head--row">
           <div>
             <p className="section__label">
-              <span>03</span>CAPABILITIES
+              <span>04</span>CAPABILITIES
             </p>
             <h2 className="section__title">个人优势</h2>
           </div>
           <p className="section__desc">
-            横跨平面设计、AIGC 与内容运营的
+            从项目统筹到视觉落地，
             <br />
-            复合能力结构。
+            一条完整的创作能力链路。
           </p>
         </Reveal>
 

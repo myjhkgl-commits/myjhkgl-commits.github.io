@@ -8,14 +8,14 @@ export default function Direction() {
         <Reveal className="section__head section__head--row">
           <div>
             <p className="section__label">
-              <span>04</span>CAREER DIRECTION
+              <span>06</span>CAREER DIRECTION
             </p>
             <h2 className="section__title">求职方向</h2>
           </div>
           <p className="section__desc">
             以{profile.intent}为核心，
             <br />
-            兼顾 AIGC、品牌与新媒体视觉。
+            兼顾 AIGC、信息可视化与新媒体视觉。
           </p>
         </Reveal>
 

@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="container contact__inner">
         <Reveal className="contact__head">
           <p className="section__label section__label--center">
-            <span>05</span>LET&apos;S WORK TOGETHER
+            <span>07</span>LET&apos;S WORK TOGETHER
           </p>
           <h2 className="contact__title">
             一起做点
@@ -81,3 +81,4 @@ export default function Contact() {
     </footer>
   )
 }
+
