@@ -51,7 +51,7 @@ export default function Awards() {
           <p className="section__desc">
             以大学生创新创业项目为研究底座，
             <br />
-            累计斩获 19 项国家级 / 省级奖项。
+            累计斩获 19 项国家级 / 省级奖项，荣誉资质一并陈列。
           </p>
         </Reveal>
 

@@ -28,7 +28,7 @@ export const profile = {
     period: '2023.06 — 2027.06'
   },
   intro:
-    '潍坊学院数字媒体技术专业本科在读，竞赛经验丰富。持有日语 N2、日语四级、日语六级证书，擅长以 AIGC 工作流提升创意生产效率，累计获国家级奖项 7 项、省级奖项 12 项。',
+    '潍坊学院数字媒体技术专业本科在读，竞赛经验丰富。持有日语 N2、大学日语四级、日语六级证书，擅长以 AIGC 工作流提升创意生产效率，累计获国家级奖项 7 项、省级奖项 12 项。',
   intro2:
     '曾任学院心理服务中心朋辈部部长，统筹 30 人团队完成 200 人次心理访谈（有效率 95%）与 5 场大型问卷回收；暑期实习中负责新媒体短视频剪辑、内容运维与线上直播招生，完成引流、咨询对接与招生转化。求职方向：交互设计。',
   summary:
@@ -48,7 +48,7 @@ export const aboutCards = [
   },
   {
     title: '证书能力',
-    value: '日语 N2 / 日语四级 / 日语六级 / 中科院心理咨询师',
+    value: '日语 N2 / 大学日语四级 · 六级 / 中科院心理咨询师',
     desc: '兼具跨文化审美理解、设计心理洞察与 AIGC 创意生产效率。'
   },
   {
@@ -124,7 +124,7 @@ export const awardsSummary = {
   national: 7,
   province: 12,
   span: '2025.06 — 2026.08',
-  note: '涵盖蓝桥杯、中国好创意、未来设计师 NCDA、米兰设计周、数媒竞赛等十余项赛事。',
+  note: '涵盖蓝桥杯、中国好创意、未来设计师 NCDA、米兰设计周、数媒竞赛等十余项赛事；另附校园荣誉、语言证书与项目、实习证明。',
   breakdown: [
     { label: '国家级一等奖', value: 1 },
     { label: '国家级二等奖', value: 2 },
@@ -348,6 +348,98 @@ export const certificates = [
     work: '日语六级合格证书',
     team: '',
     image: asset('/awards/l02.jpg')
+  },
+  {
+    id: 'l03',
+    date: '2024.01',
+    level: 'language',
+    grade: 'N2 合格',
+    comp: '日本語能力認定書（JLPT N2）· 2023 年 12 月考试',
+    work: '日语能力考试 N2 合格证书',
+    team: '',
+    image: asset('/awards/l03.jpg')
+  },
+  // ---------- 校园荣誉 ----------
+  {
+    id: 'h01',
+    date: '2024.12',
+    level: 'campus',
+    grade: '荣誉称号',
+    comp: '潍坊学院学生工作处 · 2024-2025 学年',
+    work: '「十佳班级心理委员」荣誉称号',
+    team: '',
+    image: asset('/awards/h01.jpg')
+  },
+  {
+    id: 'h02',
+    date: '2024.12',
+    level: 'campus',
+    grade: '荣誉称号',
+    comp: '潍坊学院学生工作处 · 2024-2025 学年',
+    work: '「优秀班级心理委员」荣誉称号',
+    team: '',
+    image: asset('/awards/h02.jpg')
+  },
+  {
+    id: 'h03',
+    date: '2024.10',
+    level: 'campus',
+    grade: '荣誉证书',
+    comp: '共青团潍坊学院委员会 · 2024 年迎新志愿服务',
+    work: '「优秀青年志愿者」荣誉证书',
+    team: '',
+    image: asset('/awards/h03.jpg')
+  },
+  {
+    id: 'h04',
+    date: '2024.09',
+    level: 'campus',
+    grade: '聘书',
+    comp: '潍坊学院学生工作处 · 聘期 2024.09 — 2025.09',
+    work: '第十三届大学生自律委员会朋辈辅导部部长聘书',
+    team: '',
+    image: asset('/awards/h04.jpg')
+  },
+  // ---------- 资质与项目证明 ----------
+  {
+    id: 'q01',
+    date: '2024.01',
+    level: 'proof',
+    grade: '资质证书',
+    comp: '中国科学院心理研究所 · 心理咨询师基础培训项目',
+    work: '心理咨询师基础培训合格证书',
+    team: '',
+    image: asset('/awards/q01.jpg')
+  },
+  {
+    id: 'p01',
+    date: '2025年度',
+    level: 'proof',
+    grade: '校级立项',
+    comp: '潍坊学院 2025 年大学生创新创业训练计划立项名单 · 项目负责人',
+    work: '“版”上春秋，绘新视界——校级大创立项',
+    team: '',
+    image: asset('/awards/p01.jpg')
+  },
+  {
+    id: 'p02',
+    date: '2024年度',
+    level: 'proof',
+    grade: '结题通过',
+    comp: '校级创新训练项目结题答辩名单 · 项目负责人',
+    work: '心理健康知识本土化的平台建设与研究——结题答辩通过',
+    team: '',
+    image: asset('/awards/p02.jpg')
+  },
+  {
+    id: 'p03',
+    date: '2025.09',
+    level: 'proof',
+    grade: '实习证明',
+    comp: '山东君师教育科技有限公司 · 自媒体运营岗（2025.07 — 2025.08）',
+    work: '暑期实习证明',
+    team: '',
+    image: asset('/awards/p03.jpg')
   }
 ]
 
@@ -355,7 +447,9 @@ export const certFilters = [
   { key: 'all', label: '全部', match: () => true },
   { key: 'national', label: '国家级', match: (c) => c.level === 'national' },
   { key: 'province', label: '省级', match: (c) => c.level === 'province' },
-  { key: 'language', label: '语言证书', match: (c) => c.level === 'language' }
+  { key: 'language', label: '语言证书', match: (c) => c.level === 'language' },
+  { key: 'campus', label: '校园荣誉', match: (c) => c.level === 'campus' },
+  { key: 'proof', label: '资质与证明', match: (c) => c.level === 'proof' }
 ]
 
 // ---------------- 技能 / 语言 ----------------

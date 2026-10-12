@@ -2213,6 +2213,17 @@ body::after {
   color: #8fd8c3;
 }
 
+.cert--campus .cert__level {
+  border-color: rgba(235, 200, 125, .45);
+  background: rgba(235, 200, 125, .1);
+  color: #ecd9a8;
+}
+
+.cert--proof .cert__level {
+  border-color: rgba(186, 160, 255, .4);
+  color: #c9b8ff;
+}
+
 .cert__work {
   display: block;
   font-size: 14.5px;
