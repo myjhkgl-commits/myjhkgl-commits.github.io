@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import Reveal from './Reveal.jsx'
-import { academic, awardsSummary, certificates, certFilters } from '../data/content.js'
+import { academic, academic2, awardsSummary, certificates, certFilters } from '../data/content.js'
 
 export default function Awards() {
   const [filter, setFilter] = useState('all')
@@ -116,6 +116,41 @@ export default function Awards() {
             <p className="awsum__note">{awardsSummary.note}</p>
           </Reveal>
         </div>
+
+        {/* ---------- 第二项大创：枣庄石榴文化 ---------- */}
+        <Reveal className="academic academic--wide" y={34}>
+          <div className="academic__head">
+            <span className="academic__badge">{academic2.badge}</span>
+            <span className="academic__period">{academic2.period}</span>
+          </div>
+          <div className="academic__body">
+            <div className="academic__main">
+              <p className="academic__role">
+                <em>{academic2.role}</em>
+                <span>{academic2.level}</span>
+              </p>
+              <h3 className="academic__title">{academic2.title}</h3>
+              <p className="academic__subtitle">{academic2.subtitle}</p>
+              <p className="academic__desc">{academic2.desc}</p>
+              <ul className="academic__list">
+                {academic2.items.map((it) => (
+                  <li key={it.no}>
+                    <span className="academic__no">{it.no}</span>
+                    <div>
+                      <strong>{it.key}</strong>
+                      <p>{it.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="academic__gallery">
+              {academic2.images.map((src, i) => (
+                <img key={src} src={src} alt={`${academic2.title} ${i + 1}`} loading="lazy" />
+              ))}
+            </div>
+          </div>
+        </Reveal>
 
         {/* ---------- 证书墙 ---------- */}
         <Reveal className="certs__bar" y={26}>

@@ -54,9 +54,9 @@ export default function Projects() {
             <h2 className="section__title">精选作品</h2>
           </div>
           <p className="section__desc">
-            六个代表性作品，
+            十个代表性作品，
             <br />
-            覆盖字体、IP、信息可视化与交互设计。
+            覆盖字体、IP、信息可视化、AIGC 与交互设计。
           </p>
         </Reveal>
 

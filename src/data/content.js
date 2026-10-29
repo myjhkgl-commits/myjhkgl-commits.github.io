@@ -118,6 +118,40 @@ export const academic = {
   ]
 }
 
+// ---------------- 学术经历 · 第二项大创（石榴文化） ----------------
+export const academic2 = {
+  label: 'COLLEGE INNOVATION PROJECT',
+  badge: '大创项目',
+  role: '项目负责人',
+  period: '2026.06 — 至今',
+  level: '大学生创新创业训练计划 · 校级项目 · 立项在研',
+  title: '枣庄石榴文化数字化视觉建构',
+  subtitle: '与中华民族共同体意识沉浸式传播',
+  desc: '延续石榴文化研究脉络，围绕中华民族共同体意识传播，构建「IP 设计 + APP 应用 + 信息可视化」三位一体的数字化视觉系统，以沉浸式体验推动石榴文化的年轻化表达。',
+  images: [
+    asset('/projects/dachuang-shiliu/1.jpg'),
+    asset('/projects/dachuang-shiliu/2.jpg'),
+    asset('/projects/dachuang-shiliu/3.jpg')
+  ],
+  items: [
+    {
+      no: '01',
+      key: 'IP 设计',
+      text: '深化石榴文化 IP 形象体系，形成可延展的角色与纹样资产。'
+    },
+    {
+      no: '02',
+      key: 'APP 应用',
+      text: '完成「籽律」自律打卡 APP 的界面与交互设计，融合农民画视觉语言。'
+    },
+    {
+      no: '03',
+      key: '成果转化',
+      text: '阶段成果获中国好创意国赛三等奖、未来设计师 NCDA 省赛三等奖。'
+    }
+  ]
+}
+
 // ---------------- 获奖概览（据获奖证书统计） ----------------
 export const awardsSummary = {
   total: 19,
@@ -488,18 +522,25 @@ export const interests = ['心理学', 'UX 设计', '读书', '自媒体博主']
 
 export const experience = [
   {
+    kind: '实习经历',
+    period: '2026.01 — 2026.10',
+    org: '潍坊企形文化创意有限公司',
+    role: '中文字库字形设计',
+    desc: '负责中文字库字形设计与字符制作；参与与方正集团联合开发的《方正古风宋》项目，完成字形打磨与细节校对，该字体预计 2026 年 12 月上线；另参与《圆融隶》《明体》等多款商用字库开发，规范笔画结构、统一字体视觉风格。'
+  },
+  {
+    kind: '实习经历',
+    period: '2025.07 — 2026.09',
+    org: '山东君师教育科技有限公司',
+    role: '新媒体运营',
+    desc: '负责新媒体账号短视频剪辑与内容运维，持续提升账号活跃度；策划并执行线上直播招生活动，通过直播内容优化吸引目标用户，完成引流、咨询对接与招生转化。'
+  },
+  {
     kind: '社团与组织',
     period: '2024.09 — 2025.09',
     org: '潍坊学院自律委员会心理中心朋辈部',
     role: '部长',
     desc: '对 30 人团队进行科学任务分配，高效完成 200 人次心理访谈活动（有效率 95%）及 5 场大型问卷的设计与回收。'
-  },
-  {
-    kind: '实习经历',
-    period: '2025.08 — 2025.09',
-    org: '山东君师教育科技有限公司',
-    role: '新媒体运营',
-    desc: '负责新媒体账号短视频剪辑与内容运维，持续提升账号活跃度；策划并执行线上直播招生活动，通过直播内容优化吸引目标用户，完成引流、咨询对接与招生转化。'
   }
 ]
 
@@ -532,8 +573,8 @@ export const projects = [
     id: '03',
     year: '2026',
     category: '信息可视化',
-    title: '冠世榴韵——枣庄石榴文化信息可视化设计',
-    desc: '从历史源流、文化寓意、产业价值与城市品牌四个维度，将枣庄石榴文化转译为可读、可游的信息可视化叙事。作品获第二十届中国好创意国赛三等奖。',
+    title: '丹若榴叙——枣庄石榴文化信息可视化设计',
+    desc: '从历史源流、文化寓意、产业价值与城市品牌四个维度，将枣庄石榴文化转译为可读、可游的信息可视化叙事。作品以参赛名《冠世榴韵》获第二十届中国好创意国赛三等奖。',
     tags: ['信息可视化', '文化叙事', '国赛三等奖'],
     image: asset('/projects/03/1.jpg'),
     images: [
@@ -567,13 +608,61 @@ export const projects = [
   {
     id: '06',
     year: '2025',
-    category: 'IP 设计 · UI/UX',
+    category: 'IP 形象设计 · 民族文化',
     title: '籽灵·榴园奇遇 —— 石榴籽 IP 设计',
     desc: '以石榴籽喻中华民族共同体，主角籽灵拥有标志性翡翠绿瞳，衍生 56 个民族形象并融合传统民族服饰；依托漫画、盲盒文创等载体，用年轻化潮玩视觉传递多元共生观念。',
-    tags: ['IP 设计', '文创延展', 'UI/UX'],
+    tags: ['IP 设计', '民族文化', '文创延展'],
     image: asset('/projects/06/1.jpg'),
     images: [
       asset('/projects/06/1.jpg'), asset('/projects/06/2.jpg'), asset('/projects/06/3.jpg'), asset('/projects/06/4.jpg'), asset('/projects/06/5.jpg')
+    ]
+  },
+  {
+    id: '07',
+    year: '2026',
+    category: 'AIGC · 非遗数字化',
+    title: '五禽灵境——华佗五禽戏沉浸式数字设计',
+    desc: '以国家级非遗华佗五禽戏为核心，塑造虎、鹿、熊、猿、鹤五禽拟人化 IP 与沉浸式场景，融入 AIGC 与 VR 互动，兼顾疏肝、强脊、调脾等养生机理表达。个人负责 AI 生图，与赵硕协作完成修复与排版。',
+    tags: ['AIGC', '非遗', '沉浸式体验'],
+    image: asset('/projects/07/1.jpg'),
+    images: [
+      asset('/projects/07/1.jpg'), asset('/projects/07/2.jpg'), asset('/projects/07/3.jpg'), asset('/projects/07/4.jpg'), asset('/projects/07/5.jpg'), asset('/projects/07/6.jpg')
+    ]
+  },
+  {
+    id: '08',
+    year: '2026',
+    category: 'AIGC · 跨文化视觉',
+    title: '时空画匠——木版年画遇见世界名作',
+    desc: '将《记忆的永恒》《呐喊》《蒙娜丽莎》等西方经典与中国传统木版年画风格融合，借助即梦 AI 迭代生成，保留吉祥元素、层叠印刷与烫金工艺等传统技法，延展至邮票、服饰、包装等文创场景。',
+    tags: ['AIGC', '木版年画', '文创应用'],
+    image: asset('/projects/08/1.jpg'),
+    images: [
+      asset('/projects/08/1.jpg'), asset('/projects/08/2.jpg'), asset('/projects/08/3.jpg'), asset('/projects/08/4.jpg'), asset('/projects/08/5.jpg'), asset('/projects/08/6.jpg')
+    ]
+  },
+  {
+    id: '09',
+    year: '2025',
+    category: '信息可视化 · 非遗',
+    title: '刻版之间——杨家埠木版年画×西方画派',
+    desc: '提取年画传统配色、木版肌理与吉祥符号，与野兽派、波普、后印象派、立体主义四大画派风格碰撞，采用「AIGC + 人工优化」路线完成信息可视化呈现。作品获全国大学生数媒科技作品及创意竞赛省级三等奖。',
+    tags: ['信息可视化', '非遗', '东西方融合'],
+    image: asset('/projects/09/1.jpg'),
+    images: [
+      asset('/projects/09/1.jpg'), asset('/projects/09/2.jpg'), asset('/projects/09/3.jpg'), asset('/projects/09/4.jpg'), asset('/projects/09/5.jpg')
+    ]
+  },
+  {
+    id: '10',
+    year: '2025',
+    category: 'UI/UX · APP 设计',
+    title: '籽律 APP——自律成长打卡应用',
+    desc: '以石榴文化为精神内核、农民画风格为视觉语言的自律打卡 APP：LOGO 融合石榴与时钟，任务、图鉴、小组、个人四大板块兼顾自律记录与社交分享，用年轻化国风弱化自律的枯燥感。',
+    tags: ['UI/UX', 'APP 设计', '国风视觉'],
+    image: asset('/projects/10/1.jpg'),
+    images: [
+      asset('/projects/10/1.jpg'), asset('/projects/10/2.jpg'), asset('/projects/10/3.jpg'), asset('/projects/10/4.jpg'), asset('/projects/10/5.jpg')
     ]
   }
 ]

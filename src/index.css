@@ -2224,6 +2224,49 @@ body::after {
   color: #c9b8ff;
 }
 
+/* ---------- 作品 7-10 布局 ---------- */
+.work__card--7 { grid-column: span 7; }
+.work__card--8 { grid-column: span 5; padding-top: 118px; }
+.work__card--9 { grid-column: span 4; }
+.work__card--10 { grid-column: span 8; padding-top: 72px; }
+
+@media (max-width: 900px) {
+  .work__card--7,
+  .work__card--8,
+  .work__card--9,
+  .work__card--10 { grid-column: auto; padding-top: 0; }
+}
+
+/* ---------- 第二项大创（宽幅卡片） ---------- */
+.academic--wide { margin-top: 56px; }
+
+.academic__body {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.academic__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-content: start;
+}
+
+.academic__gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4.2;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .academic__body { grid-template-columns: 1fr; }
+  .academic__gallery { grid-template-columns: repeat(3, 1fr); }
+}
+
 .cert__work {
   display: block;
   font-size: 14.5px;
