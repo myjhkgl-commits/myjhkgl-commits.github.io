@@ -2224,17 +2224,13 @@ body::after {
   color: #c9b8ff;
 }
 
-/* ---------- 作品 7-10 布局 ---------- */
-.work__card--7 { grid-column: span 7; }
-.work__card--8 { grid-column: span 5; padding-top: 118px; }
-.work__card--9 { grid-column: span 4; }
-.work__card--10 { grid-column: span 8; padding-top: 72px; }
-
-@media (max-width: 900px) {
-  .work__card--7,
-  .work__card--8,
-  .work__card--9,
-  .work__card--10 { grid-column: auto; padding-top: 0; }
+/* ---------- 作品 7-10：并入统一三列网格（不允许各自跨列） ---------- */
+.work__card--7,
+.work__card--8,
+.work__card--9,
+.work__card--10 {
+  grid-column: auto;
+  padding-top: 0;
 }
 
 /* ---------- 第二项大创（宽幅卡片） ---------- */
