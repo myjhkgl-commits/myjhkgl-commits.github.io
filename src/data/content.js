@@ -618,30 +618,6 @@ export const projects = [
     ]
   },
   {
-    id: '07',
-    year: '2026',
-    category: 'AIGC · 非遗数字化',
-    title: '五禽灵境——华佗五禽戏沉浸式数字设计',
-    desc: '以国家级非遗华佗五禽戏为核心，塑造虎、鹿、熊、猿、鹤五禽拟人化 IP 与沉浸式场景，融入 AIGC 与 VR 互动，兼顾疏肝、强脊、调脾等养生机理表达。个人负责 AI 生图，与赵硕协作完成修复与排版。',
-    tags: ['AIGC', '非遗', '沉浸式体验'],
-    image: asset('/projects/07/1.jpg'),
-    images: [
-      asset('/projects/07/1.jpg'), asset('/projects/07/2.jpg'), asset('/projects/07/3.jpg'), asset('/projects/07/4.jpg'), asset('/projects/07/5.jpg'), asset('/projects/07/6.jpg')
-    ]
-  },
-  {
-    id: '08',
-    year: '2026',
-    category: 'AIGC · 跨文化视觉',
-    title: '时空画匠——木版年画遇见世界名作',
-    desc: '将《记忆的永恒》《呐喊》《蒙娜丽莎》等西方经典与中国传统木版年画风格融合，借助即梦 AI 迭代生成，保留吉祥元素、层叠印刷与烫金工艺等传统技法，延展至邮票、服饰、包装等文创场景。',
-    tags: ['AIGC', '木版年画', '文创应用'],
-    image: asset('/projects/08/1.jpg'),
-    images: [
-      asset('/projects/08/1.jpg'), asset('/projects/08/2.jpg'), asset('/projects/08/3.jpg'), asset('/projects/08/4.jpg'), asset('/projects/08/5.jpg'), asset('/projects/08/6.jpg')
-    ]
-  },
-  {
     id: '09',
     year: '2025',
     category: '信息可视化 · 非遗',
